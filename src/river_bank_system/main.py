@@ -75,7 +75,7 @@ def main() -> None:
     Handles the initial program start menu for logging in or creating a new user.
     """
 
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.ERROR)
 
     # Load configuration and set locale
     config_obj = config.Config()

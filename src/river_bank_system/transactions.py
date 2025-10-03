@@ -19,7 +19,6 @@ class TransactionsDB:
         Initializes the TransactionsDB class.
         """
         config_obj = config.Config()
-        logging.basicConfig(level=logging.DEBUG)
         self.logger = logging.getLogger(__name__)
 
         self.db_object = sqlite3.connect(config_obj.DATABASE_PATH)
